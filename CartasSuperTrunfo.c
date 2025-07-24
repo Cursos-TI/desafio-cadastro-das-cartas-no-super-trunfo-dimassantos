@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAX_CIDADE_TAM 20
+#define MAX_COD_TAM 4
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 
@@ -8,8 +10,8 @@ int main() {
     //Variáveis que representam os atributos das cartas
 
     char estadoCarta1, estadoCarta2;
-    char codigoCarta1[4], codigoCarta2[4];
-    char nomeCidadeCarta1[20], nomeCidadeCarta2[20];
+    char codigoCarta1[MAX_COD_TAM], codigoCarta2[MAX_COD_TAM];
+    char nomeCidadeCarta1[MAX_CIDADE_TAM], nomeCidadeCarta2[MAX_CIDADE_TAM];
     int populacaoCarta1, populacaoCarta2;
     float areaCarta1, areaCarta2;
     float pibCarta1, pibCarta2;
