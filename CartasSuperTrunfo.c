@@ -24,14 +24,14 @@ int main() {
     printf("Cadastre os dados da Carta ( 1 )\n");
     printf("--------------------------------\n\n");
 
-    printf("Estado: ");
-    scanf("%c", &estadoCarta1);
+    printf("\n\nEstado: ");
+    scanf(" %c", &estadoCarta1);
 
     printf("\nCodigo : ");
-    scanf("%s", codigoCarta1);
+    scanf(" %3[^\n]", codigoCarta1);
 
     printf("\nNome da Cidade : ");
-    scanf("%s", nomeCidadeCarta1);
+    scanf(" %19[^\n]", nomeCidadeCarta1);
 
     printf("\nPopulação: ");
     scanf("%d", &populacaoCarta1);
@@ -45,23 +45,19 @@ int main() {
     printf("\nNúmero de Pontos Turísticos: ");
     scanf("%d", &numeroPontosTuristicosCarta1);
 
-    /*Remove \n do stdin que estava causando comportamento 
-    anômalo na obteção do valor para a variável estadoCarta2. */
-    getchar();
-
     //Início do cadastro da carta 02
 
     printf("\n\nCadastre os dados da Carta ( 2 )\n");
     printf("--------------------------------");
 
     printf("\n\nEstado: ");
-    scanf("%c", &estadoCarta2);
+    scanf(" %c", &estadoCarta2);
 
     printf("\nCodigo : ");
-    scanf("%s", codigoCarta2);
+    scanf(" %3[^\n]", codigoCarta2);
 
     printf("\nNome da Cidade : ");
-    scanf("%s", nomeCidadeCarta2);
+    scanf(" %19[^\n]", nomeCidadeCarta2);
 
     printf("\nPopulação: ");
     scanf("%d", &populacaoCarta2);
